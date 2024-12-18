@@ -1,4 +1,3 @@
-#Mitra
 #Retrieve the top 3 airlines with the highest average ticket prices:
 SELECT A.AirlineName, ROUND(AVG(T.Price)) AS AvgTicketPrice
 FROM AIRLINE A
@@ -49,7 +48,6 @@ WHERE PassengerID IN (
     WHERE A.AirlineName LIKE 'QA%'
 );
 
-#Shriya
 #Find the total number of flights departing from each terminal in May, ordered by terminal ID:
 SELECT G.TerminalID, COUNT(F.FlightID) AS TotalFlights
 FROM GATE G
@@ -98,7 +96,6 @@ FROM (
 ) AS EmployeeSchedules
 ORDER BY ScheduleCount DESC;
 
-#Muqadas
 #Find the total number of checked-in baggage items for each flight:
 SELECT bp.FlightID, COUNT(b.BaggageID) AS CheckedInBaggageCount
 FROM BOARDING_PASS bp
